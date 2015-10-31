@@ -8,11 +8,7 @@ import java.io.FileReader;
  * Created by sdww on 15-10-30.
  */
 public class GoodsClassifier {
-    //防止该类被new出来
-    //private GoodsClassifier() {};
-    //持有该单例对象
-    //private static GoodsClassifier goodsClassifier = null;
-    //免税商品名称的字典树
+
     private DictionaryTree dictionaryTree;
 
     /**
@@ -20,29 +16,29 @@ public class GoodsClassifier {
      * @param path 免税商品名单文件夹，该文件夹下所有文件均会被扫描，并将其中的单词都加入到字典树中
      * @return
      */
-    public static GoodsClassifier getInstance(String path) {
-        GoodsClassifier goodsClassifier = new GoodsClassifier();
-        goodsClassifier.dictionaryTree = new DictionaryTree();
+    public GoodsClassifier(String path) {
 
         //将所有免税商品名称加入字典树中
         File file = new File(path);
         File[] list = file.listFiles();
-        if(list == null) {
-            System.out.println("build dictionarytree failed");
-            return goodsClassifier;
-        }
-        for (File nonTaxPath : list) {
+        dictionaryTree = new DictionaryTree();
+
+        /*if(list == null) {
+            System.out.println("build dictionaryTree failed");
+        }*/
+
+        for (File taxExempt : list) {
             try {
-                BufferedReader reader = new BufferedReader(new FileReader(nonTaxPath));
+                BufferedReader reader = new BufferedReader(new FileReader(taxExempt));
                 String lineString = null;
                 while((lineString = reader.readLine()) != null) {
-                    goodsClassifier.dictionaryTree.add(lineString);
+                    lineString =  lineString.replaceAll("\\s{2,}", " ");
+                    dictionaryTree.add(lineString);
                 }
             } catch (Exception e) {
                 e.printStackTrace();
             }
         }
-        return goodsClassifier;
     }
 
     /**

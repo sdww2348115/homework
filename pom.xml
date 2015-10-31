@@ -55,7 +55,7 @@
                             </resources>
                         </configuration>
                     </execution>
-                    <!-- 复制相应addition文件 -->
+                    <!-- 复制load文件 -->
                     <execution>
                         <id>copy-addition</id>
                         <phase>process-sources</phase>

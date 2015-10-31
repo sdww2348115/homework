@@ -11,12 +11,13 @@ import java.util.List;
 public class MethodsTest extends TestCase {
 
     public void testGetInputs() throws Exception {
-        Methods methods = new Methods();
+        Methods methods = new Methods("load", "addition");
         List<String> excepts = new LinkedList<String>();
         excepts.add("1 book at 12.49");
         excepts.add("1 music CD at 14.99");
         excepts.add("1 chocolate bar at 0.85");
-        List<String> actuals = methods.getInputs("./input/input1.txt");
-        assertEquals(excepts.get(0), actuals.get(0));
+        List<String> actual = methods.getInputs("input/input1.txt");
+        System.out.print(actual.size());
+        assertEquals(excepts.size(), actual.size());
     }
 }
