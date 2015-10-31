@@ -1,0 +1,91 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <title></title>
+<style id="system" type="text/css">h1,h2,h3,h4,h5,h6,p,blockquote {    margin: 0;    padding: 0;}body {    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;    font-size: 13px;    line-height: 18px;    color: #737373;    margin: 10px 13px 10px 13px;}a {    color: #0069d6;}a:hover {    color: #0050a3;    text-decoration: none;}a img {    border: none;}p {    margin-bottom: 9px;}h1,h2,h3,h4,h5,h6 {    color: #404040;    line-height: 36px;}h1 {    margin-bottom: 18px;    font-size: 30px;}h2 {    font-size: 24px;}h3 {    font-size: 18px;}h4 {    font-size: 16px;}h5 {    font-size: 14px;}h6 {    font-size: 13px;}hr {    margin: 0 0 19px;    border: 0;    border-bottom: 1px solid #ccc;}blockquote {    padding: 13px 13px 21px 15px;    margin-bottom: 18px;    font-family:georgia,serif;    font-style: italic;}blockquote:before {    content:"C";    font-size:40px;    margin-left:-10px;    font-family:georgia,serif;    color:#eee;}blockquote p {    font-size: 14px;    font-weight: 300;    line-height: 18px;    margin-bottom: 0;    font-style: italic;}code, pre {    font-family: Monaco, Andale Mono, Courier New, monospace;}code {    background-color: #fee9cc;    color: rgba(0, 0, 0, 0.75);    padding: 1px 3px;    font-size: 12px;    -webkit-border-radius: 3px;    -moz-border-radius: 3px;    border-radius: 3px;}pre {    display: block;    padding: 14px;    margin: 0 0 18px;    line-height: 16px;    font-size: 11px;    border: 1px solid #d9d9d9;    white-space: pre-wrap;    word-wrap: break-word;}pre code {    background-color: #fff;    color:#737373;    font-size: 11px;    padding: 0;}@media screen and (min-width: 768px) {    body {        width: 748px;        margin:10px auto;    }}</style><style id="custom" type="text/css"></style></head>
+<body marginheight="0">
+    <meta charset="UTF-8">
+    <title></title>
+<style id="system" type="text/css">h1,h2,h3,h4,h5,h6,p,blockquote {    margin: 0;    padding: 0;}body {    font-family: &quot;Helvetica Neue&quot;, Helvetica, &quot;Hiragino Sans GB&quot;, Arial, sans-serif;    font-size: 13px;    line-height: 18px;    color: #737373;    margin: 10px 13px 10px 13px;}a {    color: #0069d6;}a:hover {    color: #0050a3;    text-decoration: none;}a img {    border: none;}p {    margin-bottom: 9px;}h1,h2,h3,h4,h5,h6 {    color: #404040;    line-height: 36px;}h1 {    margin-bottom: 18px;    font-size: 30px;}h2 {    font-size: 24px;}h3 {    font-size: 18px;}h4 {    font-size: 16px;}h5 {    font-size: 14px;}h6 {    font-size: 13px;}hr {    margin: 0 0 19px;    border: 0;    border-bottom: 1px solid #ccc;}blockquote {    padding: 13px 13px 21px 15px;    margin-bottom: 18px;    font-family:georgia,serif;    font-style: italic;}blockquote:before {    content:&quot;C&quot;;    font-size:40px;    margin-left:-10px;    font-family:georgia,serif;    color:#eee;}blockquote p {    font-size: 14px;    font-weight: 300;    line-height: 18px;    margin-bottom: 0;    font-style: italic;}code, pre {    font-family: Monaco, Andale Mono, Courier New, monospace;}code {    background-color: #fee9cc;    color: rgba(0, 0, 0, 0.75);    padding: 1px 3px;    font-size: 12px;    -webkit-border-radius: 3px;    -moz-border-radius: 3px;    border-radius: 3px;}pre {    display: block;    padding: 14px;    margin: 0 0 18px;    line-height: 16px;    font-size: 11px;    border: 1px solid #d9d9d9;    white-space: pre-wrap;    word-wrap: break-word;}pre code {    background-color: #fff;    color:#737373;    font-size: 11px;    padding: 0;}@media screen and (min-width: 768px) {    body {        width: 748px;        margin:10px auto;    }}</style><style id="custom" type="text/css"></style>
+<h2>作业说明</h2>
+<ul>
+<li>本文档是汪煊的作业说明,如有任何问题请联系本人（<code>Tel：15810382356</code>,<code>mail:wx2348115@sina.com</code>）</li>
+<li>开发环境<ul>
+<li>操作系统：ubuntu14.04LTS</li>
+<li>开发JDK：Java SE 8u65</li>
+<li>开发IDE：eclipse</li>
+</ul>
+</li>
+</ul>
+<h2>使用说明</h2>
+<ul>
+<li>1.首先<code>解压缩</code>，将zip包所含文件夹放至任一目录下</li>
+</ul>
+<ul>
+<li>2.在解压出来的ThoughtWorks目录下的<code>load</code>是配置文件夹<ul>
+<li>未输入参数时程序读取文件内的内容作为输入，默认为例程中的三个文件内容合至一起，即<code>/input/input.txt</code>中的内容</li>
+<li>程序启动时会扫描<code>load</code>文件夹下所有文件，并把其中的内容作为免税商品名称输入至程序</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>3.以jar方式启动应用程序<ul>
+<li>linux环境下以输入命令进入ThoughtWorks文件夹&amp;或者window环境下通过cmd/powerShell进入文件夹</li>
+<li>使用java -jar TW.jar [fileName]命令启动程序</li>
+eg.java -jar TW.jar input1.txt
+</ul>
+</li>
+</ul>
+<ul>
+<li>3.以导入工程方式启动应用程序<ul>
+<li>启动eclipse，导入ThoughtWorks文件夹所含工程，参见<a href="http://jingyan.baidu.com/article/ceb9fb10d757da8cad2ba0b6.html">eclipse导入工程</a></li>
+<li>在eclipse左边的工作栏中选中ThoughtWorks文件夹,右键点击并在弹出菜单中依次选择<code>Run As</code>-&gt;<code>Java Application</code></li>
+</ul>
+</li>
+</ul>
+<h2>解题说明</h2>
+<ul>
+<li>需求分析：<ul>
+<li><code>要求</code>该题目的主要要求是根据输入商品的文本信息，得到一张含税的商品价格清单</li>
+<li><code>关键</code>是如何从字符串中获取相应的商品信息并经过计算按照要求输出结果</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>难点以及解决方案<ul>
+<li><code>从文件（字符串中）中获取商品信息</code>：该程序采用的方案是使用正则表达式与字符串替换的方案对每行文本进行解析，将每行数据分解为<code>商品数量</code> <code>商品名称</code> <code>商品量词</code> <code>商品价格（不含税）</code>四个主要的方面进行处理</li>
+<li><code>对于tax的计算</code>：本程序采用的是通过计算税价除以0.05的余数的方式再经过计算来获取满足题目要求的税价。同时考虑到double类型不能准确表示金额，所以本程序中均使用BigDecimal类型对金额进行处理</li>
+<li><code>健壮性</code>：考虑到在大规模文本中含有不合法的输入，所以该程序含有对于不合法输入的相应错误提示，同时不会影响其他正常输入数据的计算与显示</li>
+<li><code>扩展性</code>：考虑到免税商品包括<code>books</code>, <code>food</code>, <code>medical products</code>三项而没有提到具体的商品名称，所以该程序将免税商品的名称通过扫描<code>load</code>目录下文件的方式导入，为了保证程序效率，使用单词查找树(Trie)的方式进行存储与比较</li>
+</ul>
+</li>
+</ul>
+<h2>程序源码结构说明</h2>
+<ul>
+<li>所有程序代码均在<code>src</code>目录下,请用linux或者OSX操作系统打开源码文件，否则注释会显示为乱码</li>
+</ul>
+<ul>
+<li>package main：<ul>
+<li>Main.java：程序的整体入口
+</li></ul>
+</li>
+<li>package method：<ul>
+<li>Methods.java：程序的绝大多数处理方法均在此文件中</li>
+</ul>
+</li>
+<li>package entity：<ul>
+<li>Good.java：商品类的实体，包含商品类的各种属性以及重构的toString()方法</li>
+<li>GoodClassifer.java：商品分类器的单例类，主要用来分辨该商品是否属于免税商品范围</li>
+<li>DictionaryTree.java：字典树的实现类，用来给GoodClassifer提供服务</li>
+</ul>
+</li>
+</ul>
+<h2>补充说明</h2>
+<ul>
+<li>程序在默认情况下仅接受<code>ThoughtWorks/input/input.txt</code>文件作为输入源文件，如果更换测试用例请将文件放在<code>ThoughtWorks/</code>目录下</li>
+<li><code>load</code>目录中文件的输入格式为每一行为一种免税商品的名称,大小写敏感并且仅支持英文字母与空格符。请不要在此目录下的文件中间加入空行。
+
+</li></ul>
+
+
+<p>Edit By <a href="http://mahua.jser.me">MaHua</a></p>
+</body></html>
